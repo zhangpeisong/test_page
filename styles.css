@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff66a3;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 200px; /* 调整地址和按钮距离底部的位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.8em;
+    color: #FEC2ED;
+    font-family: 'Dancing Script', cursive;
+    white-space: nowrap;
+    margin-bottom: 40px; /* 调整地址和按钮之间的间距 */
+    z-index: 10;
+}
+
+.copy-button {
+    background-color: #DA36AC;
+    border: none;
+    color: white;
+    font-family: 'Apple Chancery', 'Comic Sans MS', cursive;;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px; /* 可选：进一步调整间距 */
+    z-index: 10;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #cc00cc; /* 紫色背景 */
+    width: 100%;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 40px; /* 设置子项之间的间距 */
+}
+
+
+.story-content {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 垂直顶部对齐 */
+}
+
+.image-text-container {
+    display: flex; /* 使用Flexbox布局 */
+    align-items: flex-start; /* 垂直顶部对齐 */
+}
+
+.image-wrapper {
+    overflow: hidden; /* 隐藏超出部分 */
+    height: 400px; /* 图像容器高度，根据需要调整 */
+}
+
+.pepe-image {
+    /*max-width: 200px; !* 图像最大宽度 *!*/
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; /* 图像高度自适应 */
+    margin-right: 20px; /* 图像右侧留白 */
+}
+
+.text-content {
+    max-width: 300px; /* 设置文字框的最大宽度 */
+    align-self: center; /* 垂直居中 */
+}
+
+.description {
+    font-family: 'Patrick Hand', cursive; /* 使用 Patrick Hand 花体艺术字体 */
+    line-height: 1.6; /* 行高 */
+    word-wrap: break-word; /* 超出部分自动换行 */
+    color: #4a148c;
+    font-size: 1.2em;
+}
+
+
+.token-information {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.token-container {
+    background-color: #e6c0eb;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.token-title {
+    font-size: 3em;
+    color: #4b0082;
+}
+
+.token-content {
+    font-size: 2em;
+    color: #4b0082;
+    margin: 20px 0;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.token-footer {
+    font-size: 1.2em;
+    color: #4b0082;
+    font-style: italic;
+}
+
+@media (min-width: 600px) {
+    .address{
+        font-size: 1.4em;
+    }
+    .title {
+        font-size: 2.5em;
+    }
+
+    .content {
+        font-size: 2em;
+    }
+
+    .footer {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 900px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .content {
+        font-size: 2.5em;
+    }
+
+    .footer {
+        font-size: 1.5em;
+    }
+}
+
+
+.page-footer {
+    background-color: #cc00cc; /* 页脚的背景颜色 */
+    width: 100%;
+    height: 50px; /* 页脚的高度 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+.page-footer p {
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+}
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Pepe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <header class="header-container">
+            <div class="banner-container">
+                <img src="img/png_banner.avif" alt="Pink Pepe Banner" class="banner">
+                <div class="overlay-content">
+                    <p class="address">CA: BdulCihfcY9WMeAbrSoHwxTTSoRswHM68oAWX2pump</p>
+                    <button class="copy-button">Copy to Clipboard</button>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <div class="icon-container">
+                <a href="https://link1.com" target="_blank">
+                    <img src="img/X.png" alt="Icon 1" class="icon">
+                </a>
+                <a href="https://link2.com" target="_blank">
+                    <img src="img/telegram.png" alt="Icon 2" class="icon">
+                </a>
+                <a href="https://raydium.io/swap/?inputMint=sol&outputMint=Bdu1CihrFcY9WMeAbRSoHwxT7SoRsrWtM68oAWX2pump" target="_blank">
+                    <img src="img/platform.svg" alt="Icon 3" class="icon">
+                </a>
+            </div>
+        </footer>
+
+        <section class="story-content">
+            <div class="image-text-container">
+                <div class="image-wrapper">
+                    <img src="img/pepe.avif" alt="Pink Pepe Image" class="pepe-image">
+                </div>
+                <div class="text-content">
+                    <p class="description">
+                        Pink PEPE is a unique take on the famous internet meme, showcasing originality and creativity. Its distinctive bright pink hue not only makes it adorable and eye-catching but also sets it apart from traditional depictions. This PEPE symbolizes bold self-expression and playfulness, bringing vivid colors to the mundane. Its image elicits smiles and uplifts the mood of everyone who sees it. Pink PEPE is more than just a meme; it’s a statement about the desire to be unique in a world of duplicates.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="token-information">
+            <div class="token-container">
+                <div class="token-title">Tokenomics</div>
+                <div class="token-content">Total Issued: <span class="blue">100,000,000,000</span></div>
+                <div class="token-content">Liquidity Pool Burned: <span class="red">100%</span></div>
+                <div class="token-content">Fee: <span class="green">0%</span></div>
+                <div class="token-footer">Is this the next big hit in the crypto world? Keep an eye on it...</div>
+            </div>
+        </section>
+
+        <section class="page-footer">
+                <p>© PinkPepe</p>
+        </section>
+    </div>
+
+
+    <script>
+        document.querySelector('.copy-button').addEventListener('click', function() {
+            const fullText = document.querySelector('.address').textContent;
+            const textToCopy = fullText.split('CA: ')[1]; // 获取“CA:”之后的内容
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('Copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        });
+    </script>
+</body>
+
+</html>
